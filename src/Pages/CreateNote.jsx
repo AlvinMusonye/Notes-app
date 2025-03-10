@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaPlus } from "react-icons/fa";
 
 const NotesApp = () => {
   const [notes, setNotes] = useState([]);
@@ -43,7 +44,7 @@ const NotesApp = () => {
           placeholder="Enter a note..."
         />
         <button onClick={addNote} className="bg-sky-500 cursor-pointer hover:bg-sky-900 text-white p-2 rounded">
-          Add
+        <FaPlus />
         </button>
       </div>
 
